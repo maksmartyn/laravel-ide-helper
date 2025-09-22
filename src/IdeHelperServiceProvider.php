@@ -7,6 +7,9 @@ use Illuminate\Support\ServiceProvider;
 
 class IdeHelperServiceProvider extends ServiceProvider implements DeferrableProvider
 {
+    /**
+     * @inheritDoc
+     */
     public function register()
     {
         $this->app->singleton(
@@ -20,9 +23,7 @@ class IdeHelperServiceProvider extends ServiceProvider implements DeferrableProv
     }
 
     /**
-     * Get the services provided by the provider.
-     *
-     * @return array
+     * @inheritDoc
      */
     public function provides()
     {
