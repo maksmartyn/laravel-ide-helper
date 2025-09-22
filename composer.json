@@ -22,7 +22,7 @@
     "require": {
         "php": "~8.2",
         "barryvdh/laravel-ide-helper": "^2.13",
-        "larastan/larastan": "^2.6",
+        "larastan/larastan": "~2.6.0",
         "phar-io/manifest": "^2.0",
         "phpstan/phpstan": "^1.10"
     },
