@@ -1,0 +1,48 @@
+{
+    "name": "maksmartyn/laravel-ide-helper",
+    "description": "Laravel IDE Helper, generates correct PHPDocs for all Facade classes, to improve auto-completion.",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "autocomplete",
+        "ide",
+        "helper",
+        "phpstorm",
+        "netbeans",
+        "sublime",
+        "codeintel",
+        "phpdoc"
+    ],
+    "authors": [
+        {
+            "name": "maksmartyn",
+            "email": "maksmartyn@protonmail.com"
+        }
+    ],
+    "require": {
+        "php": "~8.2",
+        "barryvdh/laravel-ide-helper": "^2.13",
+        "larastan/larastan": "^2.6",
+        "phar-io/manifest": "^2.0",
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "MaksMartyn\\LaravelIdeHelper\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MaksMartyn\\LaravelIdeHelper\\IdeHelperServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
