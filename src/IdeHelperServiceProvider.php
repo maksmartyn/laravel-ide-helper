@@ -18,4 +18,14 @@ class IdeHelperServiceProvider extends ServiceProvider implements DeferrableProv
 
         $this->commands('command.ide-helper.models-from-migrations');
     }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return ['command.ide-helper.models-from-migrations'];
+    }
 }
