@@ -4,8 +4,8 @@ namespace MaksMartyn\LaravelIdeHelper\Console;
 
 use Barryvdh\LaravelIdeHelper\Console\ModelsCommand;
 use Illuminate\Support\Str;
-use NunoMaduro\Larastan\Properties\MigrationHelper;
-use NunoMaduro\Larastan\Properties\SchemaTable;
+use Larastan\Larastan\Properties\MigrationHelper;
+use Larastan\Larastan\Properties\SchemaTable;
 use PHPStan\Command\CommandHelper;
 use PHPStan\Command\InceptionNotSuccessfulException;
 use ReflectionClass;
