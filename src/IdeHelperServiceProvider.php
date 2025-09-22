@@ -12,14 +12,7 @@ class IdeHelperServiceProvider extends ServiceProvider implements DeferrableProv
      */
     public function register()
     {
-        $this->app->singleton(
-            'command.ide-helper.models-from-migrations',
-            function ($app) {
-                return new Console\ModelsFromMigrationsCommand($app['files']);
-            }
-        );
-
-        $this->commands('command.ide-helper.models-from-migrations');
+        $this->commands([Console\ModelsFromMigrationsCommand::class]);
     }
 
     /**
@@ -27,6 +20,6 @@ class IdeHelperServiceProvider extends ServiceProvider implements DeferrableProv
      */
     public function provides()
     {
-        return ['command.ide-helper.models-from-migrations'];
+        return [Console\ModelsFromMigrationsCommand::class];
     }
 }
