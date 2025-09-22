@@ -81,7 +81,8 @@ class ModelsFromMigrationsCommand extends ModelsCommand
             null,
             null,
             true,
-            $this->verbosity === OutputInterface::VERBOSITY_DEBUG
+            $this->verbosity === OutputInterface::VERBOSITY_DEBUG,
+            true
         );
 
         /** @phpstan-ignore-next-line */
